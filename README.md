@@ -20,7 +20,7 @@ $ pacman-log-analyze.py --format markdown
 ## Usage
 
 ```
-usage: pacman-log-analyze.py [-h] [-f {csv,tsv,markdown,json}] [-o OUTPUT]
+usage: pacman-log-analyze.py [-h] [-f {csv,tsv,markdown,json,html}] [-o OUTPUT]
                              [--skip-failed-transactions] [--no-summary]
                              [--plot DIR]
                              [logfile]
@@ -51,15 +51,14 @@ pacman-log-analyze.py ~/backup/pacman.log --format json -o now.json --plot ./cha
 pacman-log-analyze.py --format tsv --no-summary
 
 # Social-media-friendly HTML output (screenshot-friendly)
-
-```shell
 pacman-log-analyze.py --format html --no-summary > stats.html
 ```
 
 ## Screenshot
 
-![Arch Linux package history - 1 year installation](Screenshot%202026-09-20%20at%2022-20-10%20Pacman%20Package%20History.png)
-```
+My 1 year Arch install rendered with `--format html`:
+
+![Arch Linux package history - 1 year installation](examples/screenshot-html.png)
 
 ## Features
 
